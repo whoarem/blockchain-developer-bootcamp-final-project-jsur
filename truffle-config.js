@@ -1,5 +1,5 @@
-const dotenv = require("dotenv");
-dotenv.config();
+const dotenv = require('dotenv')
+dotenv.config()
 
 /**
  * Use this file to configure your truffle project. It's seeded with some
@@ -21,8 +21,8 @@ dotenv.config();
  *
  */
 
-const HDWalletProvider = require("@truffle/hdwallet-provider");
-const mnemonic = process.env.ROPSTEN_MNEMONIC;
+const HDWalletProvider = require('@truffle/hdwallet-provider')
+const mnemonic = process.env.ROPSTEN_MNEMONIC
 
 module.exports = {
   /**
@@ -43,9 +43,9 @@ module.exports = {
     // options below to some value.
     //
     development: {
-      host: "127.0.0.1", // Localhost (default: none)
-      port: 7545, // Standard Ethereum port (default: none)
-      network_id: "1337", // Any network (default: none)
+      host: '127.0.0.1', // Localhost (default: none)
+      port: 8545, // Standard Ethereum port (default: none)
+      network_id: '1337', // Any network (default: none)
     },
     // Another network with more advanced options...
     // advanced: {
@@ -69,7 +69,7 @@ module.exports = {
       confirmations: 0, // # of confs to wait between deployments. (default: 0)
       timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
       skipDryRun: true, // Skip dry run before migrations? (default: false for public nets )
-      from: "0x9caac43ffad11f4f0c381844a6b6d5eeb3f8f030",
+      from: '0x9caac43ffad11f4f0c381844a6b6d5eeb3f8f030',
     },
     // Useful for private networks
     // private: {
@@ -87,7 +87,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.8.0",
+      version: '0.8.0',
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
@@ -119,4 +119,4 @@ module.exports = {
   //   }
   // }
   // }
-};
+}
